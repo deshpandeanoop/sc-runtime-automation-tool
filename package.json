@@ -1,0 +1,64 @@
+{
+	
+	"parameters":{
+			"scInstall" : "D:\\Program Files\\Cerner\\Soarian\\040310170\\I883\\Test",
+			"stpInstall" : "D:\\TC_040310170",
+			"jvmStartFlag" : "1",
+			"scLogDir" : "D:\\Program Files\\Cerner\\Soarian\\Log\\App"
+	},
+	
+	"java":{
+			"x64" : "\\Java\\jdk-11.0.2+9-jre-x64",
+			"x86" : "\\Java\\jdk-11.0.2+9-jre-x86",
+			"stp" : "\\Java\\jdk-11.0.2+9"
+	},
+	"delete":[{
+		"root":"\\app\\webapps\\Clinicals\\WEB-INF\\lib\\",
+		"files":["jaxb-api-2.1.jar","jaxb-core-2.1.14.jar","jaxb-impl-2.1.14.jar"]
+	},
+	{
+		"root":"\\app\\webapps\\Patientapi\\WEB-INF\\lib\\",
+		"files":["jaxb-api-2.1.jar","jaxb-core-2.1.14.jar","jaxb-impl-2.1.14.jar"]
+	},
+	{
+		"root":"\\app\\lib\\ctp_platform_tc7-1.2.20\\cerner\\",
+		"files":["infrastructure-security-tc7-1.2.20.jar"]
+	}],
+	"insert":[{
+		"root":"\\app\\lib\\ctp_platform_tc7-1.2.20\\ext\\",
+		"current": "ModifiedJars\\ext"
+	},
+	{
+		"root":"\\app\\webapps\\KDI\\WEB-INF\\lib\\",
+		"current": "ModifiedJars\\KDIWebINFLib"
+	},
+	{
+		"root":"\\app\\webapps\\Clinicals\\WEB-INF\\lib\\",
+		"current": "ModifiedJars\\ClinicalsWebINFLib"
+	},
+	{
+		"root":"\\app\\webapps\\Patientapi\\WEB-INF\\lib\\",
+		"current": "ModifiedJars\\PatientapiWebINFLib"
+	},
+	{
+		"root":"\\app\\instances\\KDIMaintjvm-1\\apache-tomcat-9.0.14\\lib\\",
+		"current": "ModifiedJars\\tomcat\\lib"
+	},
+	{
+		"root":"\\app\\instances\\SCjvm-1\\apache-tomcat-9.0.14\\lib\\",
+		"current": "ModifiedJars\\tomcat\\lib"
+	},
+	{
+		"root":"\\app\\instances\\SCjvm-2\\apache-tomcat-9.0.14\\lib\\",
+		"current": "ModifiedJars\\tomcat\\lib"
+	},
+	{
+		"root":"\\app\\instances\\SCjvm-3\\apache-tomcat-9.0.14\\lib\\",
+		"current": "ModifiedJars\\tomcat\\lib"
+	},
+	{
+		"root":"\\app\\lib\\ctp_platform_tc7-1.2.20\\cerner\\",
+		"current": "ModifiedJars\\tomcat\\security"
+	}
+	]
+}
