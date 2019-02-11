@@ -1,1 +1,1 @@
-# sc-runtime-migration-automation-tool
+# sc-runtime-migrate-automation-tool
